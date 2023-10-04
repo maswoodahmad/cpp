@@ -36,11 +36,13 @@ public:
         <<"is destroyed\n";
     }
 
+
+//operator overloading
 float operator+ (Vehicle v1){
-
 return this->price() + v1.price();
-
 }
+
+
 
     int id() const { return _id; }
 
