@@ -8,6 +8,7 @@ if there is nothing on the left it will apply to its immediate right
 Rule 2 while working with pointers, trear * symbol as token
  const int * ptr;
 here int and * are separate tokens
+rule4-> if  object is constant then it can only call those member fucntions which are also constant
 
 
 use case 1: with varibles of primitive types which are not pointers
@@ -17,10 +18,15 @@ void Demo(){
 // n1 is the constant integer
       int n1=10;// n1 is now immutable, it can't be changed once intialized
     int n2=50;
-    const int* ptr= &n1;
-    int const * ptr = &n1; // both the lines are same
 
-    ptr = &n1;
+  
+    int * const ptr = &n1; // both the lines are same
+   
+    //ptr = &n2; can not change the content of the pointetr since its a const
+
+    const int * const ptr2 = &n1; // read only now its not going to allow the change value of n1 that is *ptr2=234; not allowed
+    // and ptr2=&n2 is not allowed either here 
+    
     // ptr is pointing to constant integer
     //since int part is contstant we cannot use pointet to change n1's value
 
@@ -28,7 +34,7 @@ void Demo(){
     //*ptr = 100;
 
     // its not allowed means constant integre value can't be changed
-    ptr  = &n2;// its allowed js ce pointer itself is not constant it conttent can be changed
+    // its allowed js ce pointer itself is not constant it conttent can be changed
     //grade is the constant char
     const char grade ='A';
 
