@@ -24,8 +24,9 @@ int CountOfCertainType(Employee *e[3], Department department)
 {
     int count = 0;
     for (int i = 0; i < 3; i++)
-        if ((e[1])->getDepartmentType() == department)
-            count++;
+        {
+            if ((e[1])->getDepartmentType() == department) count++;
+        }
     return count;
 }
 

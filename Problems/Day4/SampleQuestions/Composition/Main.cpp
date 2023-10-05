@@ -10,7 +10,7 @@ Employee* e[3];
 CreateObjects(e);
 
 std::cout<<*HighestPaidEmployee(e);
-std::cout<<"\nNumbers of Employee of type"<<DisplayEnum(Department::DEVELOPMENT)<<"are->"<<CountOfCertainType(e,Department::DEVELOPMENT);
+std::cout<<"\nNumbers of Employee of type\t"<<DisplayEnum(Department::DEVELOPMENT)<<"\tare->\t"<<CountOfCertainType(e,Department::DEVELOPMENT)<<std::endl;
 
 FreeMemory(e);
 
