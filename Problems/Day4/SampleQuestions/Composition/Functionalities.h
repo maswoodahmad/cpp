@@ -27,7 +27,21 @@ int CountOfCertainType(Employee* e[3], Department department);
 
 float AverageBudget(Employee* arr[3]);
 
- std::string DisplayEnum(const Department type );
+std::string DisplayEnum(const Department type );
+
+
 void FreeMemory( Employee* e[3]);
+
+//a function to check if all postions of the array are nullptr
+
+bool CheckNull(Employee* arr[3]){
+bool flag = true;
+for(int i = 0; i < 3; i++)
+{
+    if(arr[i]!=nullptr) return false;
+}
+return flag;
+
+}
 
 #endif // FUNCTIONALITIES_H
