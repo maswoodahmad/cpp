@@ -8,7 +8,7 @@ void CreateObjects(Employee *e[3])
 }
 
 Employee *HighestPaidEmployee(Employee *e[3])
-{    if(CheckNull(e)) return nullptr;
+{   if(CheckNull(e)) return nullptr;
     Employee * emp = e[0];
     for (int i = 1; i < 3; i++)
     {
