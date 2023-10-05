@@ -11,6 +11,6 @@ CreateObjects(e);
 
 std::cout<<*HighestPaidEmployee(e);
 
-
+FreeMemory(e);
 
 }
