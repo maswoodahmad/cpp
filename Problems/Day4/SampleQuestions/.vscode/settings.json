@@ -43,9 +43,7 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp",
-        "cstring": "cpp",
-        "cinttypes": "cpp",
-        "list": "cpp"
-    }
+        "typeinfo": "cpp"
+    },
+    "gitdoc.enabled": true
 }
