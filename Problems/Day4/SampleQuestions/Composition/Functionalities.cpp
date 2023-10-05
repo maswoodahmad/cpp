@@ -2,11 +2,9 @@
 
 void CreateObjects(Employee *e[3])
 {
-    e[0]= new Employee("101","gyan",125000.0f,Department::DEVELOPMENT, new Project("AUTOSAR",24, 14235235235.0f));
-    e[1]= new Employee("102","gyan",125000.0f,Department::TESTING, new Project("AUTOSAR",24, 14235235235.0f));
-    e[2]= new Employee("103","gyan",125000.0f,Department::DEVELOPMENT, new Project("AUTOSAR",24, 145235235.0f));
-
-    
+    e[0] = new Employee("101", "gyan", 125000.0f, Department::DEVELOPMENT, new Project("AUTOSAR", 24, 14235235235.0f));
+    e[1] = new Employee("102", "sonu", 125000.0f, Department::TESTING, new Project("AUTOSAR", 24, 14235235235.0f));
+    e[2] = new Employee("103", "shubham.com", 125000.0f, Department::DEVELOPMENT, new Project("AUTOSAR", 24, 145235235.0f));
 }
 
 Employee *HighestPaidEmployee(Employee *e[3])
@@ -24,14 +22,13 @@ int CountOfCertainType(Employee *e[3], Department department)
 {
     int count = 0;
     for (int i = 0; i < 3; i++)
+    {
+        bool flag = (e[i])->getDepartmentType() == department;
+        if (flag)
         {
-            bool flag =(e[i])->getDepartmentType() == department;
-            if (flag) 
-            {
-                count++;
-                
-            }
+            count++;
         }
+    }
     return count;
 }
 
