@@ -9,7 +9,6 @@ Employee* e[3];
 
 CreateObjects(e);
 
-std::cout<<*HighestPaidEmployee(e);
 
 
 

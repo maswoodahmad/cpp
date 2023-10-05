@@ -23,7 +23,7 @@ public:
 
     ~Employee()
     {
-
+        delete project;
         std::cout << "object destroyed\t";
     }
 

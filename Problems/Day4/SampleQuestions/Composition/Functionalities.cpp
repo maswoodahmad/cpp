@@ -32,7 +32,10 @@ float AverageBudget(Employee *e[3])
 { float total=0.0f;
     for( int i=0; i< 3; i++)
     { 
-            total+=(e[i])->getProject()->budget();
+
+
+            Project* p = (e[i])->getProject();
+            total+= (p)->budget();
             total/=3;
     }
     return total;
