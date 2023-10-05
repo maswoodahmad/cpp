@@ -2,14 +2,12 @@
 
 void CreateObjects(Employee *e[3], Project *p[3])
 {
+ 
 
-p[0]= new Project("Autosar", 20, 200000.0f);
-p[1]= new Project("ML", 36, 1000000.0f);
-p[2]= new Project("Autosar", 48, 5500000.0f);
 
-e[0]= new Employee("101","Sonu",150000.0f, Department::DEVELOPMENT, p[0] );
-e[1]= new Employee("102","Monu",75000.0f, Department::TESTING, p[1] );
-e[3]= new Employee("103","Ramu",125000.0f, Department::INTEGERATION, p[3] );
+e[0]= new Employee("101","Sonu",150000.0f, Department::DEVELOPMENT, new Project("Autosar", 20, 200000.0f) );
+e[1]= new Employee("102","Monu",75000.0f, Department::TESTING, new Project("ML", 36, 1000000.0f));
+e[3]= new Employee("103","Ramu",125000.0f, Department::INTEGERATION, new Project("Autosar", 48, 5500000.0f) );
 
 }
 
