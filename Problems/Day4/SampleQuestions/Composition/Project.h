@@ -21,7 +21,7 @@ public:
 
     ~Project() {
         std::cout
-        <<"Project with name\t"<<_name<<"deleted/n";
+        <<"Project with name\t"<<_name<<"\tdeleted";
     }
 
     float budget() const { return _budget; }
