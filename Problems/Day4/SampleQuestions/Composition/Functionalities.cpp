@@ -12,7 +12,7 @@ void CreateObjects(Employee *e[3])
 Employee *HighestPaidEmployee(Employee *e[3])
 {
     Employee *emp = e[0];
-    for (int i = 0; i < 3; i++)
+    for (int i = 1; i < 3; i++)
     {
         if ((e[i])->salary() > (emp)->salary())
             emp = e[i];
