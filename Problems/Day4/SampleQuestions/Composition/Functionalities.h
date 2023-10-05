@@ -8,7 +8,7 @@
 //link one project with one emp
 
 
-void CreateObjects(Employee* e[3], Project* p[3]);
+void CreateObjects(Employee* e[3]);
 
 /*
 
@@ -25,7 +25,7 @@ with the second parameter passed to this function
 */
 int CountOfCertainType(Employee* e[3], Department department);
 
-float AverageBudget(Project* arr[3]);
-void FreeMemory( Employee* e[3], Project * p[3]);
+float AverageBudget(Employee* arr[3]);
+void FreeMemory( Employee* e[3]);
 
 #endif // FUNCTIONALITIES_H

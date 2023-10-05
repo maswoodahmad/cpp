@@ -5,9 +5,9 @@
 int main(){
 
 Employee* e[3];
-Project* p[3];
 
-CreateObjects(e,p);
+
+CreateObjects(e);
 
 std::cout<<*HighestPaidEmployee(e);
 

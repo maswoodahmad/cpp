@@ -1,6 +1,6 @@
 #include "Functionalities.h"
 
-void CreateObjects(Employee *e[3], Project *p[3])
+void CreateObjects(Employee *e[3])
 {
  
 
@@ -28,23 +28,23 @@ int CountOfCertainType(Employee *e[3], Department department)
     return count;
 }
 
-float AverageBudget(Project *p[3])
+float AverageBudget(Employee *e[3])
 { float total=0.0f;
     for( int i=0; i< 3; i++)
     { 
-            total+=(p[i])->budget();
+            total+=(e[i])->getProject()->budget();
             total/=3;
     }
     return total;
 }
 
-void FreeMemory(Employee *e[3], Project *p[3])
+void FreeMemory(Employee *e[3])
 {
 
     for( int i=0; i<3; i++)
     {
 
-    delete (e[i])->getProject();
+    // delete (e[i])->getProject();
     delete e[i];
 
     }
