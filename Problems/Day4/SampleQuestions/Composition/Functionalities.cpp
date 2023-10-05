@@ -2,24 +2,11 @@
 
 void CreateObjects(Employee *e[3])
 {
+    e[0]= new Employee("101","gyan",125000.0f,Department::DEVELOPMENT, new Project("AUTOSAR",24, 14235235235.0f));
+    e[1]= new Employee("102","gyan",125000.0f,Department::TESTING, new Project("AUTOSAR",24, 14235235235.0f));
+    e[2]= new Employee("103","gyan",125000.0f,Department::INTEGERATION, new Project("AUTOSAR",24, 145235235.0f));
 
-    e[0] = new Employee(
-                        "101",
-                        "Sonu", 150000.0f,
-                        Department::DEVELOPMENT,
-                        new Project("Autosar", 20, 200000.0f));
-    e[1] = new Employee(
-                        "102",
-                        "Monu",
-                        75000.0f,
-                        Department::TESTING,
-                        new Project("ML", 36, 1000000.0f));
-    e[3] = new Employee(
-                        "103",
-                        "Ramu",
-                        125000.0f,
-                        Department::INTEGERATION,
-                        new Project("Autosar", 48, 5500000.0f));
+    
 }
 
 // Employee *HighestPaidEmployee(Employee *e[3])
