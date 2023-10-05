@@ -8,7 +8,8 @@ void CreateObjects(Employee *e[3])
 }
 
 Employee *HighestPaidEmployee(Employee *e[3])
-{   if(CheckNull(e)) return nullptr;
+{   
+    if(CheckNull(e)) return nullptr;
     Employee * emp = e[0];
     for (int i = 1; i < 3; i++)
     {
@@ -19,7 +20,8 @@ Employee *HighestPaidEmployee(Employee *e[3])
 }
 
 int CountOfCertainType(Employee *e[3], Department department)
-{   if(CheckNull(e)) return 0;
+{   
+    if(CheckNull(e)) return 0;
     int count = 0;
     for (int i = 0; i < 3; i++)
     {
@@ -33,7 +35,8 @@ int CountOfCertainType(Employee *e[3], Department department)
 }
 
 float AverageBudget(Employee *e[3])
-{   if(CheckNull(e)) return 0.0f;
+{   
+    if(CheckNull(e)) return 0.0f;
     float total = 0.0f;
     for (int i = 0; i < 3; i++)
     {
@@ -58,7 +61,6 @@ void FreeMemory(Employee *e[3])
 
 std::string DisplayEnum(const Department value)
 {
-
     if (value == Department::DEVELOPMENT)
         return "Development";
     else if (value == Department::DEVELOPMENT)
