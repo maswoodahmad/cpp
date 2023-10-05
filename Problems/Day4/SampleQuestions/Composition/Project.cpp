@@ -5,7 +5,7 @@
  }
 
  std::ostream &operator<<(std::ostream &os, const Project &rhs) {
-     os << "_name: " << rhs._name
+     os << "\n_name: " << rhs._name
         << " _duration: " << rhs._duration
         << " _budget: " << rhs._budget;
      return os;

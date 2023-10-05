@@ -24,7 +24,7 @@ public:
     ~Employee()
     {
         delete project;
-        std::cout << "object destroyed\t";
+        std::cout << "object destroyed\n";
     }
 
     float salary() const { return _salary; }
