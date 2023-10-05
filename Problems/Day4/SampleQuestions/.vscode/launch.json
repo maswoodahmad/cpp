@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "program": "/workspaces/cpp/Problems/Day4/SampleQuestions/Composition/a.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
