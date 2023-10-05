@@ -9,46 +9,46 @@ void CreateObjects(Employee *e[3])
     
 }
 
-// Employee *HighestPaidEmployee(Employee *e[3])
-// {
-//     Employee *emp = e[0];
-//     for (int i = 0; i < 3; i++)
-//     {
-//         if ((e[i])->salary() > (emp)->salary())
-//             emp = e[i];
-//     }
-//     return emp;
-// }
+Employee *HighestPaidEmployee(Employee *e[3])
+{
+    Employee *emp = e[0];
+    for (int i = 0; i < 3; i++)
+    {
+        if ((e[i])->salary() > (emp)->salary())
+            emp = e[i];
+    }
+    return emp;
+}
 
-// int CountOfCertainType(Employee *e[3], Department department)
-// {
-//     int count = 0;
-//     for (int i = 0; i < 3; i++)
-//         if ((e[1])->getDepartmentType() == department)
-//             count++;
-//     return count;
-// }
+int CountOfCertainType(Employee *e[3], Department department)
+{
+    int count = 0;
+    for (int i = 0; i < 3; i++)
+        if ((e[1])->getDepartmentType() == department)
+            count++;
+    return count;
+}
 
-// float AverageBudget(Employee *e[3])
-// {
-//     float total = 0.0f;
-//     for (int i = 0; i < 3; i++)
-//     {
+float AverageBudget(Employee *e[3])
+{
+    float total = 0.0f;
+    for (int i = 0; i < 3; i++)
+    {
 
-//         Project *p = (e[i])->getProject();
-//         total += (p)->budget();
-//         total /= 3;
-//     }
-//     return total;
-// }
+        Project *p = (e[i])->getProject();
+        total += (p)->budget();
+        total /= 3;
+    }
+    return total;
+}
 
-// void FreeMemory(Employee *e[3])
-// {
+void FreeMemory(Employee *e[3])
+{
 
-//     for (int i = 0; i < 3; i++)
-//     {
+    for (int i = 0; i < 3; i++)
+    {
 
-//         // delete (e[i])->getProject();
-//         delete (e[i]);
-//     }
-// }
+        // delete (e[i])->getProject();
+        delete (e[i]);
+    }
+}

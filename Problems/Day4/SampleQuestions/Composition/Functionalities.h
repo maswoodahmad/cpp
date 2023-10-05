@@ -15,17 +15,17 @@ void CreateObjects(Employee* e[3]);
 a function to return the pointetr to the employee with the highest salary
 */
 
-// Employee* HighestPaidEmployee(Employee* e[3]);
+Employee* HighestPaidEmployee(Employee* e[3]);
 
 
-// /*
-// a function to return the count of all emp in the array whose _Dept value matches
-// with the second parameter passed to this function
+/*
+a function to return the count of all emp in the array whose _Dept value matches
+with the second parameter passed to this function
 
-// */
-// int CountOfCertainType(Employee* e[3], Department department);
+*/
+int CountOfCertainType(Employee* e[3], Department department);
 
-// float AverageBudget(Employee* arr[3]);
-// void FreeMemory( Employee* e[3]);
+float AverageBudget(Employee* arr[3]);
+void FreeMemory( Employee* e[3]);
 
 #endif // FUNCTIONALITIES_H
