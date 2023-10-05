@@ -32,7 +32,7 @@ public:
     Department getDepartmentType() const { return _departmentType; }
 
     Project *getProject() const { return project; }
-
+   
     friend std::ostream &operator<<(std::ostream &os, const Employee &rhs);
 
     

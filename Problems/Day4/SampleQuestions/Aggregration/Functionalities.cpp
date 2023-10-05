@@ -51,3 +51,14 @@ void FreeMemory(Employee *e[3], Project *p[3])
 
     }
 }
+
+std::string DisplayEnum(const Department value)
+{
+
+    if (value == Department::DEVELOPMENT)
+        return "Development";
+    else if (value == Department::DEVELOPMENT)
+        return "Integaration";
+    else
+        return "Testing";
+}

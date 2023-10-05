@@ -26,6 +26,8 @@ with the second parameter passed to this function
 int CountOfCertainType(Employee* e[3], Department department);
 
 float AverageBudget(Employee* arr[3]);
+
+ std::string DisplayEnum(const Department type );
 void FreeMemory( Employee* e[3]);
 
 #endif // FUNCTIONALITIES_H

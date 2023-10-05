@@ -28,4 +28,6 @@ int CountOfCertainType(Employee* e[3], Department department);
 float AverageBudget(Project* arr[3]);
 void FreeMemory( Employee* e[3], Project * p[3]);
 
+std::string DisplayEnum(const Department type);
+
 #endif // FUNCTIONALITIES_H

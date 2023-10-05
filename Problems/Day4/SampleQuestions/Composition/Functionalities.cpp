@@ -4,7 +4,7 @@ void CreateObjects(Employee *e[3])
 {
     e[0]= new Employee("101","gyan",125000.0f,Department::DEVELOPMENT, new Project("AUTOSAR",24, 14235235235.0f));
     e[1]= new Employee("102","gyan",125000.0f,Department::TESTING, new Project("AUTOSAR",24, 14235235235.0f));
-    e[2]= new Employee("103","gyan",125000.0f,Department::INTEGERATION, new Project("AUTOSAR",24, 145235235.0f));
+    e[2]= new Employee("103","gyan",125000.0f,Department::DEVELOPMENT, new Project("AUTOSAR",24, 145235235.0f));
 
     
 }
@@ -51,4 +51,15 @@ void FreeMemory(Employee *e[3])
         // delete (e[i])->getProject();
         delete (e[i]);
     }
+}
+
+std::string DisplayEnum(const Department value)
+{
+
+    if (value == Department::DEVELOPMENT)
+        return "Development";
+    else if (value == Department::DEVELOPMENT)
+        return "Integaration";
+    else
+        return "Testing";
 }
