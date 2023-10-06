@@ -28,3 +28,7 @@ float total = 0.0f;
     //if add is of oject use arrow symbol to derefrence 
     // using arrow instead if star
 }
+
+void CreateObjects(Card *container[5])
+{
+}
