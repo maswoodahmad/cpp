@@ -59,11 +59,18 @@ void FindBestPassengerCar(Car *container[5], CarType type)
     if (flag)
     {
         std::cout<<(container[index])->brand()<<"\t"
-        <<container[index])->carModel()<<"\t";
+        <<container[index])->carModel()<<"\t"
         <<container[index])->carSeatCount()<<"\n";
     }
     else
     {
         std::cout << "No such car of provided type found\n";
+    }
+}
+
+void FreeMemory(Car * container[5]){
+    for (int i = 0; i < 5; i++){
+
+        delete container[i];
     }
 }
