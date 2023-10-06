@@ -18,9 +18,9 @@ FreeMemory(container);
 Vehicle v1(101, "toyot", VehicleType::CAR, 1000.0f);
 Vehicle v2(102, "toyot", VehicleType::CAR, 100067.0f);
 Vehicle* v3= new Vehicle(103, "toyot", VehicleType::CAR, 100.0f);
-Vehicle* v4= new Vehicle(103, "toyot", VehicleType::CAR, 50.0f);
-std::cout<<"operator overloading\t"<<v1+v2<<std::endl;
-std::cout<<"operator overloading\t"<<*v3+*v4<<std::endl;
+Vehicle* v4= new Vehicle(104, "toyot", VehicleType::CAR, 50.0f);
+std::cout<<"operator overloading stack\t"<<v1+v2<<std::endl;
+std::cout<<"operator overloading\t"<<*v3 + *v4<<std::endl;
 
 delete v3;
 delete v4;
