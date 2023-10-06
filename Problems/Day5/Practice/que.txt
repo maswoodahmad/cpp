@@ -1,0 +1,41 @@
+create a class card with attributes
+
+-_number which is a 4 digit number check for this condition
+_cvv_number which is a 3 digit number
+_issuer whioch is of rupay or visa mastercard (enum)
+
+_annual charge which is float
+_an abstract method calculatetaxoncharge which return float and takes 0 arguements
+
+create a class debitcard with attributes
+_category which is either premium, signature or deluxe
+an overriden calculatetaxoncharge implementation and return
+(_limit/100)*annual_charge is issuer is visa
+(_limit/50)*annual_Charge if issuer is mastercard
+(_limit/50)*annual_charge if issuer is rupay
+
+
+
+
+create a class creditcard with attributes
+_limit which is an integer value
+an overriden calculatetaxoncharge implementation which return (_limit*/100)*annual_Charge
+
+
+create the following functionalities.cpp
+
+fucnction 
+
+
+=== create 5 'objects 2 debit card and 3 of credit card on the heap
+- a function to return a container of all cards
+whose issuer matches the second arguement value passed to the fucnction
+
+-a function to find and return the pointer to the card whose _number is passed
+as a second arguement to the function
+-a fucnction to find and return the cvvnumber of
+ the cardd whose _annual_charges  is the highest
+( assume all have different charges with no repetitions and or duplicates);
+
+
+

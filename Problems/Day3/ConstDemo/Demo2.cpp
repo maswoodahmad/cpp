@@ -1,28 +1,30 @@
-#include<iostream>
+#include <iostream>
 class Demo2
 {
 private:
     /* data */
 
 public:
-    Demo2(/* args */) =default;
+    Demo2(/* args */) = default;
 
-    void magic(){
-        std::cout<<"something";
+    void magic()
+    {
+        std::cout << "something";
     }
 
-void display() const{
-std::cout<<"this works\n";
-}
-
+    void display() const
+    {
+        std::cout << "this works\n";
+    }
 
     ~Demo2() {}
 };
 
-int main(){
-    const Demo2 e1;//object on stack
+int main()
+{
+    const Demo2 e1; // object on stack
 
-    //e1.magic();// can't call non const memebr funtion on a const object
+    // e1.magic();// can't call non const memebr funtion on a const object
 
-    e1.display();//its works becuase display function have const 
+    e1.display(); // its works becuase display function have const
 }
