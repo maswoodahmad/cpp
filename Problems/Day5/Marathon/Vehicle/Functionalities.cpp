@@ -59,8 +59,8 @@ void FindBestPassengerCar(Car *container[5], CarType type)
     if (flag)
     {
         std::cout<<(container[index])->brand()<<"\t"
-        <<container[index])->carModel()<<"\t"
-        <<container[index])->carSeatCount()<<"\n";
+        <<container[index]->carModel()<<"\t"
+        <<container[index]->carSeatCount()<<"\n";
     }
     else
     {

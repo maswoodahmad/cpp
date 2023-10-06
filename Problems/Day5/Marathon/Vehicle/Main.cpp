@@ -17,4 +17,5 @@ int main()
     std::cout << "Number  of given type car \t" << CountOfGivenBrand(container, CarType::SEDAN) << std::endl;
     FindBestPassengerCar(container, CarType::SUV);
 
+    FreeMemory(container);
 }
