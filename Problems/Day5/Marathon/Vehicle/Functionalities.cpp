@@ -1,14 +1,16 @@
 #include "Functionalities.h"
+#include "CarType.h"'
+
 
 void CreateObjects(Car *container[5])
 {
 
     container[0] = new Car("123456", "Toyota", "Camry", CarType::SEDAN, 25000.0, 5, 15);
     container[1] = new Car("789012", "Honda", "Civic", CarType::SEDAN, 22000.0, 5, 14);
-    container[2] = new Car("345678", "Ford", "Mustang", CarType::SPORTS_HATCHBACK, 45000.0, 2, 16);
+    container[2] = new Car("345678", "Ford", "Mustang", CarType::SEDAN, 45000.0, 2, 16);
     container[3] = new Car("901234", "Jeep", "Wrangler", CarType::SUV, 35000.0, 5, 18);
     container[4] = new Car("567890", "Chevrolet", "Silverado", CarType::SEDAN, 40000.0, 3, 20);
-    container[5] = new Car("567890", "Chevrolet", "Silverado", CarType::SPORTS_HATCHBACK, 40000.0, 3, 20);
+    container[5] = new Car("567890", "Chevrolet", "Silverado", CarType::SEDAN, 40000.0, 3, 20);
 }
 float AverageFuelCapacity(Car *container[5])
 {

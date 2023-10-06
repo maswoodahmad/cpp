@@ -12,13 +12,30 @@ Car::Car(std::string _carChassisNumber, std::string _brand, std::string _carMode
 }
 
 std::ostream &operator<<(std::ostream &os, const Car &rhs) {
-    os << "_carChassisNumber: " << rhs._carChassisNumber
-       << " _brand: " << rhs._brand
-       << " _carModel: " << rhs._carModel
-       << " _type: " <<DisplayEnum( rhs._type)
-       << " _carPrice: " << rhs._carPrice
-       << " _carSeatCount: " << rhs._carSeatCount
-       << " _carFuelCapacity: " << rhs._carFuelCapacity;
+    os << "_\ncarChassisNumber: " << rhs._carChassisNumber
+       << "\tbrand: " << rhs._brand
+       << "\tcarModel: " << rhs._carModel
+       << "\ttype: " <<DisplayEnum( rhs._type)
+       << "\tcarPrice: " << rhs._carPrice
+       << "\tcarSeatCount: " << rhs._carSeatCount
+       << "\tarFuelCapacity: " << rhs._carFuelCapacity;
     return os;
 }
 
+std::string DisplayEnum(const CarType value)
+{
+
+    if (value == CarType::SEDAN)
+    {
+        return "SEDAN";
+    }
+    else if (value == CarType::SUV)
+    {
+        return "SUV";
+    }
+    else
+    {
+        return "SPORTS_HATCHBACK";
+    }
+    return "none";
+}

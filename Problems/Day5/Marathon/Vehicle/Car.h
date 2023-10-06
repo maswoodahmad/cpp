@@ -64,21 +64,6 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Car &rhs);
 };
 
-std::string DisplayEnum(const CarType value){
-
-if(value==CarType::SEDAN)
-    {
-           return "SEDAN";
-
- }
-else if(value==CarType::SUV){
-           return "SUV";
-}
-else{
-           return "SPORTS_HATCHBACK";
-
-}
-return "none";
-}
+std::string DisplayEnum(const CarType value);
 
 #endif // CAR_H
