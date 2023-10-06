@@ -1,6 +1,6 @@
 #include "Functionalities.h"
 #include "Customer.h"
-#include <vector>
+
  
 
 //Customer::Customer(int _customerID, std::string _customerName, Type _c_type, int _customerStoreCredits)
@@ -21,37 +21,39 @@ container[4]= new Customer(105, "Faiz", Type::PREMIUM, 54000);
 
 }
 
-std::vector<Customer*> CreditInRange100_200(Customer* container[5]){
+void CreditInRange100_200(Customer* container[5], Customer* arr[5]){
 
 
-std::vector<Customer*> list;
+
 
 for( int i=0; i<5;i++)
 {
 
         int credit =(container[i])->customerStoreCredits(); 
-
+        int k=0;
         if(credit>=100 && credit<=200)
         {
-            list.push_back(container[i]);
+            arr[k++]=container[i];
         }
 }
 
-return list;
+
 
 }
 
-std::vector<Customer *> TypeOfCustomer(Customer *container[5], Type type)
+void TypeOfCustomer(Customer *container[5], Type type,Customer* arr[5])
 {
 
-    std::vector<Customer*> list;
+    int k=0;
     for( int i =0; i<5 ;i++ ){
 
             Type deduced_type = (container[i])->cType();
-            if( type==deduced_type) list.push_back(container[i]);
+            if( type==deduced_type) {
+                arr[k++]=container[i];
+            }
     }
 
-   return list;
+
 }
 
 float AverageOfCertainType(Customer *container[5], Type type)
